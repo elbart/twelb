@@ -1,0 +1,11 @@
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{{ data.id }}
+{{ data.pw }}
+
+<form action="/frontend/dologin/" method="post">
+<input type="text" name="username" value="{{ username }}" />
+<input type="password" name="password" value="{{ password }}" />
+<input type="submit" value="login" />
+</form>
+
